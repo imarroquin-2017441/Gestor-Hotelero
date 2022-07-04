@@ -14,7 +14,6 @@ const reservationSchema = mongoose.Schema({
     }],
     events: [{
         event: {type: mongoose.Schema.ObjectId, ref: 'Event'},
-        quantity: Number,
         subTotal: Number
     }],
     total: Number
