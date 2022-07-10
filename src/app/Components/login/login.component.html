@@ -1,0 +1,27 @@
+<body>
+    <br><br><br><br><br><br><br><br><br>
+    <div class="wrapper fadeInDown">
+      <div id="formContent">
+        <!-- Tabs Titles -->
+    
+        <!-- Icon -->
+        <div class="fadeIn first">
+            <h1>Login</h1>
+        </div>
+    
+        <!-- Login Form -->
+        <form (ngSubmit)="login()" #loginForm="ngForm">
+          <span *ngIf="!username.valid && username.touched" class="requiredField">
+            Required field
+          </span>
+          <input [(ngModel)]="user.username" #username="ngModel" type="text" id="username" class="fadeIn second" name="username" placeholder="Nombre de usuario" required>
+          <span *ngIf="!password.valid && password.touched" class="requiredField">
+            Required field
+          </span>
+          <input [(ngModel)]="user.password" #password="ngModel" autocomplete="off" type="password" id="password" class="fadeIn third" name="password" placeholder="password" required>
+          <button [disabled]="!loginForm.form.valid" style="--clr:#1e9bff"  type="submit" class="fadeIn fourth"><span>Log In</span><i></i></button>
+          <button style="--clr:#1e9bff"  type="submit" class="fadeIn fourth" routerLink="/register"><span>Register</span><i></i></button>
+        </form>
+      </div>
+    </div>        
+</body>

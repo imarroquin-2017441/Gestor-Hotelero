@@ -1,0 +1,21 @@
+.btn-danger{
+    border-radius: 105px;
+    background-color: #C1C1C1;
+    border-color: #C1C1C1;
+    box-shadow: #5D6D7E;
+}
+.btn-danger:hover{
+    background-color: #5D6D7E;
+}
+.btn-danger:active{
+    background-color: #7F8C8D;
+    box-shadow: 5px black; 
+}
+
+nav{
+    margin-bottom: 15px;
+    background-color: #C1C1C1 ;
+}
+input{
+    border-radius: 165px;
+}
